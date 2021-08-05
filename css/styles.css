@@ -341,7 +341,6 @@ ul {
   background-color: var(--background-color-2);
   padding-top: 94px;
   padding-bottom: 94px;
-  max-width: 1600px;
   margin: 0px auto;
 }
 
@@ -368,12 +367,12 @@ ul {
 
 .members {
   display: flex;
-  /* margin-left: -30px; */
+  margin-left: -30px;
   flex-wrap: wrap;
 }
 
 .members-item {
-  flex-basis: calc(100% - 120px) / 4;
+  /* flex-basis: calc(100% - 120px) / 4; */
   margin-left: 30px;
   background: var(--secondary-text-color);
   box-shadow: 0px 1px 3px rgba(51, 42, 42, 0.12),
@@ -423,6 +422,9 @@ ul {
 }
 .regular-clients-list {
   display: flex;
+  flex-basis: calc(100% / 6 - 30px);
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .clients-list {
@@ -439,7 +441,7 @@ ul {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--clients-color);
-  /* transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -721,6 +723,7 @@ ul {
   height: 581px;
   background-color: var(--secondary-text-color);
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .close-btn {
@@ -740,4 +743,9 @@ ul {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
