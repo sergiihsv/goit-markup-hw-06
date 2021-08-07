@@ -908,7 +908,7 @@ ul {
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url("../images/check.jpg");
+  background-image: url("../images/check.svg#icon-check");
 }
 
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
